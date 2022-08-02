@@ -10,30 +10,34 @@
             
 
             var edad = 0;
-            var di = document.getElementById(d).value;
-            var me =  document.getElementById(m).value;
-            var an = document.getElementById(a).value;
+            var diaNacimiento = document.getElementById(d).value;
+            var mesNaciemiento =  document.getElementById(m).value;
+            var añoNaciemiento = document.getElementById(a).value;
+
+            diaNacimiento = parseInt(diaNacimiento,10);
+            mesNaciemiento = parseInt(mesNaciemiento,10);
+            añoNaciemiento = parseInt(añoNaciemiento,10);
 
             const fecha = new Date();
-            let añoActual = fecha.getFullYear();
-            let mesActual = fecha.getMonth() + 1;
-            let diaActual = fecha.getDay();
+            var añoActual = fecha.getFullYear();
+            var mesActual = fecha.getMonth() + 1;
+            var diaActual = fecha.getDay();
             //harry styles
 
 
-            alert(añoActual + " " + mesActual + " " +diaActual);
+            edad = añoActual - añoNaciemiento;
 
             
-
-            di = parseInt(di,10);
-            me = parseInt(me,10);
-            an = parseInt(an,10);
-
-            edad = di+me;
-
+            if (mesNaciemiento > mesActual) {
+                edad--;
+            }
+            else if(mesNaciemiento == mesActual && diaNacimiento > diaActual)
+            {
+                edad--;
+            }
+                        
             var t = document.getElementById("Texto").innerHTML = edad;
-
-
+            
 
         }
     </script>
