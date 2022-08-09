@@ -41,14 +41,73 @@
                 edad--;
             }
                         
-            var t = document.getElementById("Texto").innerHTML = edad;
+            var t = document.getElementById("TextoEdad").innerHTML = "Tienes: " + edad + " Años";
             
 
         }
     </script>
+
+    <style>
+        #dia{
+            border-radius: 5px;
+            width: 50px;
+            height: 50px;
+
+            position: absolute;
+            top: 50%;
+            margin-left: 800px;
+        }
+        #mes{
+            border-radius: 5px;
+            width: 50px;
+            height: 50px;
+
+            position: absolute;
+            top: 50%;
+            margin-left: 855px;
+        }
+        #año{
+            border-radius: 5px;
+            width: 50px;
+            height: 50px;
+
+            position: absolute;
+
+            top: 50%;
+            margin-left: 910px;
+        }
+        #testButton{
+            position: absolute;
+            margin-top: 520px;
+            margin-left: -100px;
+            left: 50%;
+        }
+
+        body{
+            background-color: #d5b26c;
+        }
+
+        #TextoPrincipal{
+            position: absolute;
+            left: 40%;
+        }
+
+        #TextoEdad{
+            position: absolute;
+        }
+        /* Harry Styles*/
+
+    </style>
 </head>
 
 <body>
+
+    <div id="TextoPrincipal"> 
+
+    <h1 id = "Texto">Calcula Tu Edad</h1>
+    <h2 id = "Orden">Introduce tu Fecha de Naciemiento</h2>
+    
+    </div>
 
     <input type="text" id="dia"  value="" placeholder="Dia"/>
     <input type="text" id="mes"  value="" placeholder="Mes"/>
@@ -57,7 +116,7 @@
     <button onclick="calcular('dia','mes', 'año')" id="testButton" >Calcular</button>
 
 
-    <h1 id="Texto"></h1>
+    <h1 id="TextoEdad"></h1>
 
 
 </body>
