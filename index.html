@@ -3,17 +3,9 @@
     <title>Calculo de tu edad</title>
     <meta charset="UTF-8">
 
-    <style>
-
-        /* Falta ponerlo bonito con CSS*/
-    </style>
-
     <script>
         function calcular(d,m,a)
         {
-            //var value = document.getElementById(id).value;
-            
-
             var edad = 0;
             var diaNacimiento = document.getElementById(d).value;
             var mesNaciemiento =  document.getElementById(m).value;
@@ -27,12 +19,9 @@
             var añoActual = fecha.getFullYear();
             var mesActual = fecha.getMonth() + 1;
             var diaActual = fecha.getDay();
-            //harry styles
-
 
             edad = añoActual - añoNaciemiento;
 
-            
             if (mesNaciemiento > mesActual) {
                 edad--;
             }
@@ -43,7 +32,6 @@
                         
             var t = document.getElementById("TextoEdad").innerHTML = "Tienes: " + edad + " Años";
             
-
         }
     </script>
 
