@@ -36,6 +36,7 @@
     </script>
 
     <style>
+            
         #dia{
             border-radius: 5px;
             width: 50px;
@@ -76,13 +77,43 @@
         }
 
         #TextoPrincipal{
+            width: 700px;
+            height: 200px;
             position: absolute;
             left: 40%;
+            align-items: center;
+        }
+        #Texto{
+            align-items: center;
+        }
+        #Orden{
+            align-items: center;
+            margin-left: -100px;
         }
 
         #TextoEdad{
             position: absolute;
+            margin: 400px 0 0 0px;
+            left: 40%;
         }
+        #testButton{
+            position: absolute;
+            background-color: #e6e6e6;
+            height: 50px;
+            width: 200px;
+            left: 48%;
+            margin-top: 260px;
+        }
+
+        #inputs{
+            position:absolute;
+            margin-left: 35px;
+            margin-top: 200px;
+            
+        }
+        
+        
+
         /* Harry Styles*/
 
     </style>
@@ -97,12 +128,19 @@
     
     </div>
 
+    <div id="calculador">
+
+    <div id="inputs">
+
     <input type="text" id="dia"  value="" placeholder="Dia"/>
     <input type="text" id="mes"  value="" placeholder="Mes"/>
     <input type="text" id="año"  value="" placeholder="Año"/>
 
-    <button onclick="calcular('dia','mes', 'año')" id="testButton" >Calcular</button>
+    </div>
 
+    <button onclick="calcular('dia','mes', 'año')" id="testButton" >Calcular</button>
+    
+    </div>
 
     <h1 id="TextoEdad"></h1>
 
